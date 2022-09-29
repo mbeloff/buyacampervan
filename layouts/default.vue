@@ -1,0 +1,15 @@
+<template>
+  <div class="min-h-screen w-full flex flex-col">
+    <TheHeader />
+    <div class="flex-1 grid relative" id="main-content">
+      <slot />
+    </div>
+    <TheFooter />
+  </div>
+</template>
+
+<script setup></script>
+
+<style lang="postcss">
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+</style>
