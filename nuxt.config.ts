@@ -1,7 +1,13 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss','@pinia/nuxt'],
-  ssr: false,
+  modules: ['@nuxtjs/tailwindcss','@pinia/nuxt','@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      Pacifico: true,
+      Comfortaa: [400,700]
+    },
+    prefetch:true
+  },
   app: {
     head: {
       title: "Buy a Campervan",

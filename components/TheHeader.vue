@@ -1,4 +1,4 @@
-<div>
+<template>
   <div class="bg-white shadow-lg shadow-black/5 z-50">
     <div class="relative w-full max-w-screen-lg mx-auto py-4">
       <div class="w-full flex flex-grow z-50 bg-white">
@@ -6,7 +6,7 @@
           <img src="~/assets/vanicon.png" alt="" class="h-14 object-contain" />
           <p class="-mt-3 font-bold text-gray-600">
             <span class="text-accent-500">buy</span>a<span
-              class="text-primary-500"
+              class="text-transparent bg-gradient-to-tr from-blue-500 to-primary-500 bg-clip-text"
               >campervan</span
             >
           </p>
@@ -26,13 +26,15 @@
             <NuxtLink
               to="/campers"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
-              >Eat a Cake</NuxtLink
             >
+              Eat a Cake
+            </NuxtLink>
             <NuxtLink
               to="/contact"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
-              >Jump in a Lake</NuxtLink
             >
+              Jump in a Lake
+            </NuxtLink>
           </div>
 
           <div

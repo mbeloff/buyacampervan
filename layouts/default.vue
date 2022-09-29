@@ -10,6 +10,4 @@
 
 <script setup></script>
 
-<style lang="postcss">
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
-</style>
+<style lang="postcss"></style>

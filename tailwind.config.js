@@ -30,16 +30,16 @@ const cinnabar = {
 
 const niagara = {
   DEFAULT: "#0DBCAD",
-  50: "#8AF7D5",
-  100: "#77F6D2",
-  200: "#51F3CD",
-  300: "#2AF0CC",
-  400: "#10E2C6",
+  50: "#9FF8DD",
+  100: "#8AF7D8",
+  200: "#5FF4D1",
+  300: "#34F1CE",
+  400: "#10E7CA",
   500: "#0DBCAD",
-  600: "#098783",
-  700: "#065253",
-  800: "#021D1F",
-  900: "#000000",
+  600: "#0A9691",
+  700: "#086E70",
+  800: "#054549",
+  900: "#022023",
 };
 
 module.exports = {
@@ -54,13 +54,15 @@ module.exports = {
       },
       fontFamily: {
         sans: "Comfortaa, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
+        cursive:
+          "Pacifico, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
       },
       colors: {
         transparent: "transparent",
         current: "currentColor",
         black: colors.black,
         white: colors.white,
-        gray: colors.zinc,
+        gray: colors.stone,
         blue: colors.sky,
         green: colors.emerald,
         accent: cinnabar,
