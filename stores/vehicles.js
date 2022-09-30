@@ -1,13 +1,5 @@
 import { defineStore } from "pinia";
-import one from "@/assets/1.jpg";
-import two from "@/assets/2.jpg";
-import one1 from "@/assets/1-1.jpg";
-import one2 from "@/assets/1-2.jpg";
-import one3 from "@/assets/1-3.jpg";
-import one4 from "@/assets/1-4.jpg";
-import one5 from "@/assets/1-5.jpg";
-import one6 from "@/assets/1-6.jpg";
-
+const imgurl = "https://ik.imagekit.io/y3ayiqneqlr";
 export const useStore = defineStore("store", {
   state: () => {
     return {
@@ -16,25 +8,69 @@ export const useStore = defineStore("store", {
           name: "model one",
           slug: "van-one",
           price: "$16,350",
-          img: one,
-          gallery: [one1, one2, one3, one4, one5, one6],
-          features: {
-            seatbelts: 2,
-            bedsize: "",
-            sleeps: 2,
-          },
+          img: imgurl + "/testvehicle/1.jpg",
+          gallery: [
+            imgurl + "/testvehicle/1.jpg",
+            imgurl + "/testvehicle/1-1.jpg",
+            imgurl + "/testvehicle/1-2.jpg",
+            imgurl + "/testvehicle/1-3.jpg",
+            imgurl + "/testvehicle/1-5.jpg",
+            imgurl + "/testvehicle/1-6.jpg",
+          ],
+          features: [
+            { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
+            {
+              text: "Sleeps 2",
+              icon: "fa-bed",
+            },
+            {
+              text: "Automatic Transmission",
+              icon: "fa-gears",
+            },
+          ],
+          specs: [
+            "Bed Dimensions: 1.45m x 2.00m",
+            "Kitchenette",
+            "Refrigerator",
+            "Some other shit",
+            "Purple Monkey Dishwasher",
+            "50,000 Watts of Funkin' Hip-Hop Power",
+            "1.21 Gigawatts!?",
+          ],
         },
         {
           name: "model two",
           slug: "van-two",
           price: "$18,750",
-          img: two,
-          gallery: [one1, one2, one3, one4, one5, one6],
-          features: {
-            seatbelts: 2,
-            bedsize: "",
-            sleeps: 2,
-          },
+          img: imgurl + "/testvehicle/2.jpg",
+          gallery: [
+            imgurl + "/testvehicle/2.jpg",
+            imgurl + "/testvehicle/1-1.jpg",
+            imgurl + "/testvehicle/1-2.jpg",
+            imgurl + "/testvehicle/1-3.jpg",
+            imgurl + "/testvehicle/1-5.jpg",
+            imgurl + "/testvehicle/1-6.jpg",
+          ],
+          features: [
+            { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
+            {
+              text: "Sleeps 2",
+              icon: "fa-bed",
+            },
+            {
+              text: "Automatic Transmission",
+              icon: "fa-gears",
+            },
+          ],
+          specs: [
+            "Bed Dimensions: 1.45m x 2.00m",
+            "Kitchenette",
+            "Refrigerator",
+            "Some other shit",
+            "Purple Monkey Dishwasher",
+            "50,000 Watts of Funkin' Hip-Hop Power",
+            "1.21 Gigawatts!?",
+          ],
         },
       ],
       company: {
