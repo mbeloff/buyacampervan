@@ -8,8 +8,8 @@
         >
       </p>
       <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-        <div class="text-center" v-for="van in store.vehicles">
-          <p class="mb-5 text-2xl text-gray-600 font-bold">
+        <div class="" v-for="van in store.vehicles">
+          <p class="mb-5 text-2xl text-gray-600 font-bold text-center">
             {{ van.name }}
           </p>
           <div class="relative">

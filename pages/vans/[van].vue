@@ -9,13 +9,13 @@
             class="w-full h-full object-cover"
           />
         </div>
-        <div class="grid grid-cols-6 mt-2 rounded-lg overflow-hidden gap-1">
+        <div class="grid grid-cols-6 mt-2 gap-1">
           <img
             v-for="img in data.gallery"
             @click="preview = img"
             :src="img + thumbsize"
             alt=""
-            class="w-full h-16 object-cover"
+            class="w-full h-16 object-cover border first:rounded-l-lg last:rounded-r-lg cursor-pointer"
           />
         </div>
       </div>
@@ -26,7 +26,7 @@
             >{{ data.name }}</span
           >
         </p>
-        <p class="mb-2">some tag line</p>
+        <p class="mb-2">tag line or short descriptor</p>
         <p class="text-sm mb-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla
           quam, dicta aspernatur neque vel cum autem libero veniam quas nam,

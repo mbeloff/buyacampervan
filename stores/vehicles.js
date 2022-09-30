@@ -31,10 +31,10 @@ export const useStore = defineStore("store", {
           specs: [
             "Bed Dimensions: 1.45m x 2.00m",
             "Kitchenette",
+            "50,000 Watts of Funkin' Hip-Hop Power",
             "Refrigerator",
             "Some other shit",
             "Purple Monkey Dishwasher",
-            "50,000 Watts of Funkin' Hip-Hop Power",
             "1.21 Gigawatts!?",
           ],
         },
@@ -65,10 +65,10 @@ export const useStore = defineStore("store", {
           specs: [
             "Bed Dimensions: 1.45m x 2.00m",
             "Kitchenette",
+            "50,000 Watts of Funkin' Hip-Hop Power",
             "Refrigerator",
             "Some other shit",
             "Purple Monkey Dishwasher",
-            "50,000 Watts of Funkin' Hip-Hop Power",
             "1.21 Gigawatts!?",
           ],
         },

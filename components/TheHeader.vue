@@ -24,16 +24,16 @@
             class="flex flex-col md:flex-row bg-white w-full h-full items-center grow py-6 md:py-0 gap-y-4 text-sm"
           >
             <NuxtLink
-              to="/campers"
+              to="/vans"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
             >
-              Eat a Cake
+              our vans
             </NuxtLink>
             <NuxtLink
               to="/contact"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
             >
-              Jump in a Lake
+              jump in a lake
             </NuxtLink>
           </div>
 
