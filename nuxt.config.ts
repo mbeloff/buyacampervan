@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     },
     prefetch:true
   },
+  ssr: false,
   app: {
     head: {
       title: "Buy a Campervan",

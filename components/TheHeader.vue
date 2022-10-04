@@ -23,18 +23,12 @@
           <div
             class="flex flex-col md:flex-row bg-white w-full h-full items-center grow py-6 md:py-0 gap-y-4 text-sm"
           >
-            <NuxtLink
+            <!-- <NuxtLink
               to="/vans"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
             >
               our vans
-            </NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
-            >
-              jump in a lake
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
 
           <div
@@ -43,9 +37,9 @@
             <button
               class="rounded-full bg-gradient-to-tr from-accent-500 to-accent-400 px-3 py-1 text-sm text-gray-100 uppercase grid place-items-center hover:from-accent-500 hover:to-accent-500"
             >
-              <span class="mt-[1.5px] w-max"
+              <NuxtLink to="/contact" class="mt-[1.5px] w-max"
                 ><i class="fa-sharp fa-comment-smile"></i> Contact
-              </span>
+              </NuxtLink>
             </button>
             <!-- <button
               class="rounded-full bg-white px-3 py-1 text-sm text-accent-400 uppercase grid place-items-center hover:bg-gray-100 hover:text-accent-500 border border-accent-400"

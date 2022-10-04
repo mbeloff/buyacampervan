@@ -26,9 +26,7 @@
           </div>
 
           <p class="mb-5 text-sm text-left">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            laboriosam doloremque maxime eius sequi. Reprehenderit facere culpa
-            quod ipsa asperiores dolorem voluptatibus a?
+            {{ van.description }}
           </p>
           <NuxtLink class="text-accent-500 group" :to="'/vans/' + van.slug"
             ><i class="fas fa-info-circle"></i> more info
@@ -47,8 +45,7 @@
         <i class="fal fa-thumbs-up fa-2x"></i>
         <p class="font-bold">something</p>
         <div class="flex-grow text-sm text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eveniet?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iure ullam, optio quibusdam iste exercitationem?
         </div>
       </div>
       <div
@@ -58,8 +55,7 @@
         <p class="font-bold">something else</p>
         <div class="flex-grow text-sm text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Iusto, quidem!
+          eveniet? Lorem ipsum dolor sit.
         </div>
       </div>
       <div
