@@ -17,6 +17,10 @@
             alt=""
             class="w-full h-16 object-cover border cursor-pointer"
           />
+          <div
+            v-for="placeholder in leftover"
+            class="w-full h-16 object-cover border bg-gray-200"
+          ></div>
         </div>
       </div>
       <div class="">
@@ -26,15 +30,39 @@
             >{{ data.name }}</span
           >
         </p>
-        <!-- <p class="mb-2">tag line or short descriptor</p> -->
+
         <p class="text-sm mb-2">{{ data.description }}</p>
+        <div class="mb-10 font-bold">
+          <p class="font-cursive text-2xl text-accent-500 mb-4">
+            <span class="font-light text-sm text-">available for</span>
+            {{ data.price }}
+          </p>
+          <p>
+            <a
+              class="text-accent-500 hover:underline"
+              :href="`tel:${store.company.phone.replaceAll(' ', '')}`"
+              ><i class="fa-sharp fa-phone"></i> {{ store.company.phone }}</a
+            >
+            <br />
+            <NuxtLink
+              to="/contact"
+              class="text-accent-500 hover:underline hover:cursor-pointer"
+              ><i class="fa-sharp fa-envelope"></i> send a message</NuxtLink
+            >
+          </p>
+        </div>
         <div class="w-[80%] mx-auto h-px bg-accent-500/50 my-10"></div>
+
         <div>
           <ul
             class="list-none text-xs text-gray-700 rounded-lg overflow-hidden columns-2"
           >
             <li class="py-1 px-2" v-for="item in data.specs">
-              <i class="fa-sharp text-accent-500 mr-2 fa-fw" :class="item.icon"></i>{{ item.text }}
+              <i
+                class="fa-sharp text-accent-500 mr-2 fa-fw"
+                :class="item.icon"
+              ></i
+              >{{ item.text }}
             </li>
           </ul>
         </div>
@@ -55,6 +83,14 @@ watchEffect(() => {
 const preview = ref(null);
 const fullsize = "?tr=w-1200";
 const thumbsize = "?tr=w-100";
+
+const leftover = computed(() => {
+  let len = store.vehicles.find((el) => el.slug == route.params.van).gallery
+    .length;
+  if (len < 6) return 6 - len;
+  if (len < 12) return 12 - len;
+  if (len < 18) return 18 - len;
+});
 </script>
 
 <style lang="scss" scoped></style>

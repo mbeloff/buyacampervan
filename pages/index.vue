@@ -1,9 +1,10 @@
 <template>
   <div class="grid w-full max-w-screen-lg gap-40 px-2 py-20 mx-auto">
     <div>
-      <p class="text-center mb-10">
-        <span
-          class="text-4xl font-bold text-center text-transparent bg-gradient-to-tr from-blue-500 to-primary-500 bg-clip-text"
+      <p
+        class="text-center mb-10 bg-gradient-to-tr from-blue-500 to-primary-400 bg-clip-text"
+      >
+        <span class="text-4xl font-bold text-center text-transparent"
           >our campervans</span
         >
       </p>
@@ -45,7 +46,8 @@
         <i class="fal fa-thumbs-up fa-2x"></i>
         <p class="font-bold">something</p>
         <div class="flex-grow text-sm text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iure ullam, optio quibusdam iste exercitationem?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iure
+          ullam, optio quibusdam iste exercitationem?
         </div>
       </div>
       <div

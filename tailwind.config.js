@@ -42,8 +42,15 @@ const niagara = {
   900: "#022023",
 };
 
+const formKitTailwind = require("@formkit/themes/tailwindcss");
+
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  plugins: [formKitTailwind],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./formkit.config.js",
+  ],
   theme: {
     extend: {
       transitionProperty: {

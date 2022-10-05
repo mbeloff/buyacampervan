@@ -1,6 +1,9 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss','@pinia/nuxt','@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/tailwindcss','@pinia/nuxt','@nuxtjs/google-fonts','@formkit/nuxt'],
+  formkit: {
+    configFile: './formkit.config.ts',
+  },
   googleFonts: {
     families: {
       Pacifico: true,
