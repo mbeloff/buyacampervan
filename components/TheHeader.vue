@@ -23,31 +23,23 @@
           <div
             class="flex flex-col md:flex-row bg-white w-full h-full items-center grow py-6 md:py-0 gap-y-4 text-sm"
           >
-            <!-- <NuxtLink
+            <NuxtLink
               to="/vans"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
             >
-              our vans
-            </NuxtLink> -->
+              vans for sale
+            </NuxtLink>
           </div>
 
           <div
             class="flex gap-2 font-bold md:w-64 md:h-8 md:pb-0 md:shadow-none my-auto bg-white justify-center shadow-xl shadow-black/20 pb-4"
           >
-            <button
-              class="rounded-full bg-gradient-to-tr from-accent-500 to-accent-400 px-3 py-1 text-sm text-gray-100 uppercase grid place-items-center hover:from-accent-500 hover:to-accent-500"
+            <NuxtLink
+              to="/contact"
+              class="rounded-md bg-gradient-to-tr from-accent-500 to-accent-400 px-5 py-2 text-sm text-gray-100 uppercase hover:from-accent-500 hover:to-accent-500 grid place-items-center"
             >
-              <NuxtLink to="/contact" class="mt-[1.5px] w-max"
-                ><i class="fa-sharp fa-comment-smile"></i> Contact
-              </NuxtLink>
-            </button>
-            <!-- <button
-              class="rounded-full bg-white px-3 py-1 text-sm text-accent-400 uppercase grid place-items-center hover:bg-gray-100 hover:text-accent-500 border border-accent-400"
-            >
-              <span class="mt-[1.5px] w-max">
-                <i class="fa-sharp fa-sign-in"></i> Contact
-              </span>
-            </button> -->
+              <span><i class="fa-sharp fa-comment"></i> Contact</span>
+            </NuxtLink>
           </div>
         </div>
 

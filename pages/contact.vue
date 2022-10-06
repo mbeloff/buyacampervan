@@ -1,7 +1,7 @@
 <template>
   <div class="grid w-full max-w-screen-lg gap-40 px-2 py-20 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div>
+      <div v-if="!submitted">
         <p
           class="mb-5 w-max bg-gradient-to-tr from-primary-500 to-blue-400 bg-clip-text"
         >
@@ -21,66 +21,92 @@
           <i class="fa-sharp fa-phone mr-2"></i>{{ store.company.phone }}
         </a>
       </div>
-      <div class="p-4 rounded-lg shadow-lg border">
-        <FormKit
-          type="form"
-          :actions="false"
-          :config="{
-            // config override applies to all nested FormKit components
-            classes: {
-              outer: 'mb-2',
-              label: 'block mb-1 font-bold text-sm text-primary-500',
-              inner: 'rounded-lg h-min',
-              wrapper: 'h-min',
-              input:
-                'w-full h-full py-3 block px-3 text-base text-gray-700 placeholder-gray-400 rounded-lg border',
-              help: 'text-xs text-gray-500',
-              messages: 'list-none p-0 mt-1 mb-0',
-              message: 'text-red-500 mb-1 text-xs',
-            },
-          }"
-        >
-          <FormKit label="Your Name" type="text" validation="required" />
-          <div class="grid gap-x-4 grid-cols md:grid-cols-2">
-            <FormKit
-              type="tel"
-              label="Phone"
-              validation="required"
-              class="relative"
-            />
-            <FormKit
-              type="email"
-              label="Email"
-              validation="?email"
-              validation-visibility="live"
-            />
-          </div>
-
-          <FormKit
-            type="select"
-            label="Which model are you enquiring about?"
-            name="model"
-            v-model="form.model"
+      <SmoothReflow>
+        <div class="p-4 rounded-lg shadow-lg border relative overflow-hidden">
+          <div
+            v-show="submitting"
+            class="absolute inset-0 backdrop-blur-sm grid place-items-center bg-gray-200/50"
           >
-            <option value="not specified">---</option>
-            <option v-for="model in models" :value="model.name">
-              {{ model.name }}
-            </option>
-          </FormKit>
+            <i class="fa-sharp fa-circle-notch fa-spin fa-2x text-accent"></i>
+          </div>
+          <div v-if="submitted" class="grid place-items-center py-10">
+            <p class="font-cursive text-accent text-2xl mb-4">Thanks</p>
+            <p>We'll get back to you shortly</p>
+            <NuxtLink class="mt-10 text-accent" to="/"
+              >go back? <i class="fa-sharp fa-house"></i
+            ></NuxtLink>
+          </div>
           <FormKit
-            type="textarea"
-            label="Message"
-            rows="4"
-            validation="required"
-            placeholder="Hi, I was wondering about..."
-          />
-          <FormKit
-            type="submit"
-            input-class="bg-primary-500 hover:bg-primary-600 text-white"
-            ><i class="fa-sharp fa-paper-plane"></i> Send
+            v-else
+            type="form"
+            @submit="handleSubmit"
+            :actions="false"
+            :config="{
+              // config override applies to all nested FormKit components
+              classes: {
+                outer: 'mb-2',
+                label: 'block mb-1 font-bold text-sm text-primary-500',
+                inner: 'rounded-lg h-min',
+                wrapper: 'h-min',
+                input:
+                  'w-full h-full py-3 block px-3 text-base text-gray-700 placeholder-gray-400 rounded-lg border',
+                help: 'text-xs text-gray-500',
+                messages: 'list-none p-0 mt-1 mb-0',
+                message: 'text-red-500 mb-1 text-xs',
+              },
+            }"
+          >
+            <FormKit
+              label="Your Name"
+              type="text"
+              validation="required"
+              v-model="form.name"
+            />
+            <div class="grid gap-x-4 grid-cols md:grid-cols-2">
+              <FormKit
+                type="tel"
+                label="Phone"
+                v-model="form.phone"
+                validation="required"
+                class="relative"
+              />
+              <FormKit
+                type="email"
+                label="Email"
+                v-model="form.email"
+                validation="?email"
+                validation-visibility="live"
+              />
+            </div>
+
+            <FormKit
+              type="select"
+              label="Which model are you enquiring about?"
+              name="model"
+              v-model="form.model"
+            >
+              <option value="not specified">---</option>
+              <option v-for="model in models" :value="model.name">
+                {{ model.name }}
+              </option>
+            </FormKit>
+            <FormKit
+              type="textarea"
+              label="Message"
+              rows="4"
+              v-model="form.message"
+              validation="required"
+              placeholder="Hi, I was wondering about..."
+            />
+            <FormKit
+              type="submit"
+              input-class="bg-primary-500 hover:bg-primary-600 text-white"
+            >
+              <i class="fa-sharp fa-paper-plane"></i> Send
+            </FormKit>
           </FormKit>
-        </FormKit>
-      </div>
+        </div>
+      </SmoothReflow>
     </div>
   </div>
 </template>
@@ -92,6 +118,9 @@ const models = computed(() => {
   return [...store.vehicles];
 });
 
+const submitting = ref(false);
+const submitted = ref(false);
+
 const form = ref({
   name: "",
   phone: "",
@@ -99,6 +128,24 @@ const form = ref({
   model: "not specified",
   message: "",
 });
+
+async function handleSubmit(values) {
+  console.log("submitting", values);
+  submitting.value = true;
+  await fetch("/.netlify/functions/sendmail", {
+    method: "POST",
+    body: JSON.stringify(form.value),
+  }).then((res) => {
+    console.log(res);
+    if (!res.ok) {
+      alert("Message failed to send. Please try again, or give us a call.");
+      submitting.value = false;
+      return;
+    }
+    submitting.value = false;
+    submitted.value = true;
+  });
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   formkit: {
     configFile: './formkit.config.ts',
   },
+  ssr: false,
   googleFonts: {
     families: {
       Pacifico: true,
@@ -11,7 +12,6 @@ export default defineNuxtConfig({
     },
     prefetch:true
   },
-  ssr: false,
   app: {
     head: {
       title: "Buy a Campervan",

@@ -1,15 +1,13 @@
 <template>
   <div class="w-full py-10 relative mt-20">
     <div class="w-full max-w-screen-lg mx-auto px-2 pb-20">
-      <div class="flex gap-4 font-bold mb-3">
-        <NuxtLink class="hover:text-accent-500" to="/van">our vans</NuxtLink>
-        <NuxtLink class="hover:text-accent-500" to="/contact"
-          >contact us</NuxtLink
-        >
+      <div class="flex gap-4 font-bold mb-3 text-accent">
+        <NuxtLink class="hover:underline" to="/vans">our vans</NuxtLink>
+        <NuxtLink class="hover:underline" to="/contact">contact us</NuxtLink>
       </div>
       <p class="text-sm">&copy 2022 buyacampervan.com.au</p>
     </div>
-    <div class="absolute inset-0">
+    <div class="absolute inset-0 pointer-events-none">
       <div
         class="h-1/2 bg-accent-400 absolute right-0 bottom-0 -z-10 clip w-full"
       ></div>

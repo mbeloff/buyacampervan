@@ -38,16 +38,12 @@
             {{ data.price }}
           </p>
           <p>
-            <a
-              class="text-accent-500 hover:underline"
-              :href="`tel:${store.company.phone.replaceAll(' ', '')}`"
-              ><i class="fa-sharp fa-phone"></i> {{ store.company.phone }}</a
-            >
-            <br />
             <NuxtLink
               to="/contact"
-              class="text-accent-500 hover:underline hover:cursor-pointer"
-              ><i class="fa-sharp fa-envelope"></i> send a message</NuxtLink
+              class="rounded-md bg-gradient-to-tr from-accent-500 to-accent-400 px-5 py-2 text-sm text-gray-100 uppercase hover:from-accent-500 hover:to-accent-500 grid place-items-center w-max"
+              ><span
+                ><i class="fa-sharp fa-comment"></i> enquire</span
+              ></NuxtLink
             >
           </p>
         </div>

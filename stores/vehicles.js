@@ -20,6 +20,7 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
+            { text: "Brand new fitout", icon: "fa-sparkles" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
             { text: "Sleeps 2", icon: "fa-bed" },
@@ -58,6 +59,7 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
+            { text: "Brand new fitout", icon: "fa-sparkles" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
             { text: "Sleeps 2", icon: "fa-bed" },
