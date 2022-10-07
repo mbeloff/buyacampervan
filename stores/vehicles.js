@@ -72,7 +72,7 @@ export const useStore = defineStore("store", {
             { text: "Slide-out kitchen", icon: "fa-sink" },
             { text: "Slide-out fridge", icon: "fa-refrigerator" },
             { text: "Dual battery setup", icon: "fa-car-battery" },
-            { text: "USB chargin ports", icon: "fa-usb-drive" },
+            { text: "USB charging ports", icon: "fa-usb-drive" },
           ],
         },
       ],
