@@ -2,8 +2,13 @@
   <div class="w-full py-10 relative mt-20">
     <div class="w-full max-w-screen-lg mx-auto px-2 pb-20">
       <div class="flex gap-4 font-bold mb-3 text-accent">
-        <NuxtLink class="hover:underline" to="/vans">our vans</NuxtLink>
-        <NuxtLink class="hover:underline" to="/contact">contact us</NuxtLink>
+        <NuxtLink
+          v-for="link in links"
+          class="hover:underline"
+          :to="link.path"
+          v-show="route.path != link.path"
+          >{{ link.label }}</NuxtLink
+        >
       </div>
       <p class="text-sm">&copy 2022 buyacampervan.com.au</p>
     </div>
@@ -32,7 +37,25 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRoute } from "vue-router";
+const route = useRoute();
+
+const links = [
+  {
+    label: "home",
+    path: "/",
+  },
+  {
+    label: "vans",
+    path: "/vans",
+  },
+  {
+    label: "contact",
+    path: "/contact",
+  },
+];
+</script>
 
 <style lang="postcss" scoped>
 .clip {
