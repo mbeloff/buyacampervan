@@ -1,6 +1,6 @@
 <template>
-  <div class="grid w-full max-w-screen-lg gap-40 px-2 py-20 mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  <div class="grid w-full max-w-screen-md gap-40 px-2 py-20 mx-auto">
+    <div class="grid grid-cols-1 gap-10">
       <div v-if="!submitted">
         <p
           class="mb-5 w-max bg-gradient-to-tr from-primary-500 to-blue-400 bg-clip-text"
@@ -104,6 +104,36 @@
             >
               <i class="fa-sharp fa-paper-plane"></i> Send
             </FormKit>
+
+            <!-- H o n e y p o t -->
+            <template>
+              <label
+                class="-z-10 w-0 h-0 absolute inset-0 opacity-0"
+                for="name"
+              ></label>
+              <input
+                class="-z-10 w-0 h-0 absolute inset-0 opacity-0"
+                autocomplete="off"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name here"
+                v-model="honey.name"
+              />
+              <label
+                class="-z-10 w-0 h-0 absolute inset-0 opacity-0"
+                for="email"
+              ></label>
+              <input
+                class="-z-10 w-0 h-0 absolute inset-0 opacity-0"
+                autocomplete="off"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your e-mail here"
+                v-model="honey.email"
+              />
+            </template>
           </FormKit>
         </div>
       </SmoothReflow>
@@ -129,9 +159,23 @@ const form = ref({
   message: "",
 });
 
+const honey = ref({
+  name: "",
+  email: "",
+});
+
 async function handleSubmit(values) {
   console.log("submitting", values);
   submitting.value = true;
+
+  if (honey.value.name || honey.value.email) {
+    setTimeout(() => {
+      submitting.value = false;
+      submitted.value = true;
+    }, 1000);
+    return;
+  }
+
   await fetch("/.netlify/functions/sendmail", {
     method: "POST",
     body: JSON.stringify(form.value),
@@ -148,4 +192,4 @@ async function handleSubmit(values) {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="postcss" scoped></style>
