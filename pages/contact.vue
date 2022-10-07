@@ -172,7 +172,7 @@ async function handleSubmit(values) {
     setTimeout(() => {
       submitting.value = false;
       submitted.value = true;
-    }, 1000);
+    }, 2000);
     return;
   }
 

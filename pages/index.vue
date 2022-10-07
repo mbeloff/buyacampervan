@@ -1,7 +1,35 @@
 <template>
-  <div class="grid w-full max-w-screen-lg gap-40 px-2 py-20 mx-auto">
-    <VansPreview></VansPreview>
-
+  <div class="grid w-full max-w-screen-lg gap-20 md:gap-40 px-2 py-20 mx-auto">
+    <div>
+      <p class="mb-10 text-center text-3xl md:text-6xl">
+        <span
+          class="font-bold text-center text-transparent bg-gradient-to-tr from-accent-500 to-accent-300 bg-clip-text"
+          >buy</span
+        >
+        <span
+          class="font-bold text-center text-transparent bg-gray-500 bg-clip-text"
+          >a</span
+        >
+        <span
+          class="font-bold text-center text-transparent bg-gradient-to-tr from-blue-500 to-primary-400 bg-clip-text"
+          >campervan</span
+        >
+      </p>
+      <div class="grid gap-2">
+        <p>
+          We're a small Brisbane team with years of experience in campervan
+          conversions. Our campervan fitouts are hand built, and are all brand
+          new and ready for your dream road trip. Our campers are converted from
+          pre-loved Suzuki APVs - spacious and reliable vans with old-school
+          charm.
+        </p>
+        <p>
+          If you have any questions about our campers, please
+          <NuxtLink to="/contact" class="text-accent">get in touch</NuxtLink>
+          and we'll be happy to assist.
+        </p>
+      </div>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-500 lg:px-10">
       <div
         class="group rounded-md hover:text-accent-500 border-2 border-transparent shadow-lg hover:border-accent-500 flex justify-start hover:scale-[102%] flex-col items-center gap-5 p-5 transition-scale duration-500"
@@ -33,28 +61,7 @@
         </div>
       </div>
     </div>
-    <div>
-      <p class="mb-10 text-center">
-        <span
-          class="text-4xl font-bold text-center text-transparent bg-gradient-to-tr from-blue-500 to-primary-500 bg-clip-text"
-          >about</span
-        >
-      </p>
-      <div class="grid gap-2">
-        <p>
-          We're a small Brisbane team with years of experience in campervan
-          conversions. Our campervan fitouts are hand built, and are all brand
-          new and ready for your dream road trip. Our campers are converted from
-          pre-loved Suzuki APVs - spacious and reliable vans with old-school
-          charm.
-        </p>
-        <p>
-          If you have any questions about our campers, please
-          <NuxtLink to="/contact" class="text-accent">get in touch</NuxtLink>
-          and we'll be happy to assist.
-        </p>
-      </div>
-    </div>
+    <VansPreview></VansPreview>
   </div>
 </template>
 
