@@ -33,9 +33,12 @@
 
         <p class="text-sm mb-2">{{ data.description }}</p>
         <div class="mb-10 font-bold">
-          <p class="font-cursive text-2xl text-accent-500 mb-4">
+          <p class="font-cursive text-2xl text-accent-500 mb-1">
             <span class="font-light text-sm text-">available for</span>
             {{ data.price }}
+          </p>
+          <p class="text-xs mb-5 text-gray-700">
+            3 month / 5,000km warranty & 6 month rego
           </p>
           <p>
             <NuxtLink
