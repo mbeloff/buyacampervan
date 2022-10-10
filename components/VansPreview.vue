@@ -29,11 +29,15 @@
           {{ van.description }}
         </p>
         <NuxtLink class="text-accent-500 group" :to="'/vans/' + van.slug">
-          more info
-          <i
-            class="duration-200 fal fa-arrow-right group-hover:translate-x-2 transition-translate"
-          ></i
-        ></NuxtLink>
+          <span
+            class="bg-accent text-white py-1 px-4 rounded-md flex items-center w-max hover:from-accent-500 hover:to-accent-500 bg-gradient-to-tr from-accent-500 to-accent-400"
+          >
+            <i class="fa-sharp fa-image mr-2"></i>more info
+            <i
+              class="duration-200 fal fa-arrow-right group-hover:translate-x-2 ml-1 transition-translate"
+            ></i>
+          </span>
+        </NuxtLink>
       </div>
     </div>
   </div>
