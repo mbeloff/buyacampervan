@@ -7,7 +7,7 @@ export const useStore = defineStore("store", {
         {
           name: "Mystery Machine",
           slug: "mystery-machine",
-          price: "$22,000",
+          price: "$19,500",
           description:
             "The perfect van for weekends away as well as longer adventures without breaking the bank! This camper is both user friendly, comfortable and most importantly its FUN!",
           img: imgurl + "/mystery-machine/01.jpeg",
@@ -43,7 +43,7 @@ export const useStore = defineStore("store", {
           slug: "beach-comber",
           description:
             "The perfect festival/beach camping van, this build is both comfortable and private. Great on fuel with everything you need for your next adventure! ",
-          price: "$27,000",
+          price: "$23,000",
           img: imgurl + "/beach-comb/01b.jpeg",
           gallery: [
             imgurl + "/beach-comb/01b.jpeg",
