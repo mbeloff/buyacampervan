@@ -89,6 +89,17 @@
               <option v-for="model in models" :value="model.name">
                 {{ model.name }}
               </option>
+              </FormKit>
+            <FormKit
+              type="select"
+              label="Purchase city"
+              name="city"
+              v-model="form.city"
+            >
+              <option value="not specified">---</option>
+              <option v-for="item in store.cities" :value="item">
+                {{ item }}
+              </option>
             </FormKit>
             <FormKit
               type="textarea"
@@ -147,6 +158,7 @@ const store = useStore();
 const models = computed(() => {
   return [...store.vehicles];
 });
+const cities = computed(()=>store.cities)
 
 const submitting = ref(false);
 const submitted = ref(false);
@@ -157,6 +169,7 @@ const form = ref({
   email: "",
   model: "not specified",
   message: "",
+  city: "not specified",
 });
 
 const honey = ref({

@@ -53,6 +53,10 @@ exports.handler = function (event, context, callback) {
         <td>Phone:</td>
         <td><a href="tel:${phone}">${phone}</a></td>
       </tr>
+      <tr>
+        <td>Purchase City:</td>
+        <td><a href="tel:${body.city}">${body.city}</a></td>
+      </tr>
       <tr></tr>
       <tr></tr>
       <tr>

@@ -3,6 +3,7 @@ const imgurl = "https://ik.imagekit.io/y3ayiqneqlr";
 export const useStore = defineStore("store", {
   state: () => {
     return {
+      cities: ['Adelaide','Airlie Beach', 'Brisbane','Byron Bay', 'Cairns','Darwin','Hobart','Melbourne','perth','Sydney'],
       vehicles: [
         {
           name: "Mystery Machine",

@@ -76,7 +76,7 @@
           <i class="fal fa-earth-oceania fa-2x"></i>
           <p class="font-bold">Built Locally</p>
           <div class="flex-grow text-sm text-center">
-            Our team has years of experience in campervan conversions
+            Our team has years of experience in campervan conversions, with campers available in locations all around Australia
           </div>
         </div>
         <div
@@ -85,8 +85,7 @@
           <i class="fal fa-umbrella-beach fa-2x"></i>
           <p class="font-bold">Ready to Go</p>
           <div class="flex-grow text-sm text-center">
-            Our campervans come with a warranty, buyback offer and 6 months
-            rego.
+            Our campervans come with a warranty, buyback offer and 6 months rego.
           </div>
         </div>
       </div>
