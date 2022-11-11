@@ -24,7 +24,7 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
-            { text: "6 Months Registration", icon: "fa-calendar-check" },
+            { text: "6 Month Registration (SA or QLD)", icon: "fa-calendar-check" },
             { text: "Buyback Guarantee", icon: "fa-money-bill-transfer" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
@@ -95,7 +95,7 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
-            { text: "6 Months Registration", icon: "fa-calendar-check" },
+            { text: "6 Months Registration (SA or QLD)", icon: "fa-calendar-check" },
             { text: "Brand new fitout", icon: "fa-sparkles" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },

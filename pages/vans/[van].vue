@@ -58,13 +58,19 @@
           <ul
             class="list-none text-xs text-gray-700 rounded-lg overflow-hidden columns-2"
           >
-            <li class="py-1 px-2" v-for="item in data.specs">
-              <i
+            <tr class="py-1 px-2" v-for="item in data.specs">
+              <td class="py-1">
+<i
                 class="fa-sharp text-accent-500 mr-2 fa-fw"
                 :class="item.icon"
               ></i
-              >{{ item.text }}
-            </li>
+              >
+              </td>
+              <td class="py-1">
+{{ item.text }}
+              </td>
+              
+            </tr>
           </ul>
         </div>
       </div>
