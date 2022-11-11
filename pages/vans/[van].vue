@@ -2,7 +2,9 @@
   <div class="grid w-full max-w-screen-lg px-2 py-20 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div class="">
-        <div class="w-full aspect-video rounded-xl overflow-hidden bg-gray-400">
+        <div
+          class="w-full aspect-square rounded-xl overflow-hidden bg-gray-400"
+        >
           <img
             :src="(preview || data.img) + fullsize"
             alt=""
@@ -67,6 +69,7 @@
         </div>
       </div>
     </div>
+    <Buyback v-if="data.buyback"></Buyback>
   </div>
 </template>
 
