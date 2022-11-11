@@ -8,7 +8,7 @@
     </p>
     <p class="mb-5">
       Purchase with peace of mind, knowing that if you wish to sell the van at
-      the end of your journey, we'll buy it back at a price agreed upon at sale.
+      the end of your journey, we'll buy it back in Brisbane, Cairns, Melbourne, Adelaide, Perth or Sydney.
     </p>
     <tr>
       <td class="px-2">

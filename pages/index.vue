@@ -3,7 +3,7 @@
     <div class="grid grid-cols-4 max-w-screen-lg gap-0 mx-auto relative">
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[3]"
+        :src="store.vehicles[0].gallery[0]"
         alt=""
       />
       <img
@@ -18,7 +18,7 @@
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[1]"
+        :src="store.vehicles[0].gallery[2]"
         alt=""
       />
       <div
@@ -45,9 +45,8 @@
         </p>
         <div class="grid gap-2">
           <p>
-            We're a small Brisbane team with years of experience in campervan
-            conversions. Our campervan fitouts are hand built, and are all brand
-            new and ready for your dream road trip. Our campers are converted
+            We're a team with years of experience in campervan
+            conversions. Our campervan fitouts are hand built, and are all ready for your dream road trip. Our campers are converted
             from pre-loved Suzuki APVs - spacious and reliable vans with
             old-school charm.
           </p>
@@ -67,7 +66,7 @@
           <i class="fal fa-thumbs-up fa-2x"></i>
           <p class="font-bold">Quality Conversions</p>
           <div class="flex-grow text-sm text-center">
-            Hand crafted campervan fitouts, built brand new for your next
+            Hand crafted campervan fitouts, built for your next
             adventure.
           </div>
         </div>
@@ -77,7 +76,7 @@
           <i class="fal fa-earth-oceania fa-2x"></i>
           <p class="font-bold">Built Locally</p>
           <div class="flex-grow text-sm text-center">
-            Our Brisbane team has years of experience in campervan conversions
+            Our team has years of experience in campervan conversions
           </div>
         </div>
         <div
@@ -86,7 +85,7 @@
           <i class="fal fa-umbrella-beach fa-2x"></i>
           <p class="font-bold">Ready to Go</p>
           <div class="flex-grow text-sm text-center">
-            Our campervans are recently converted, ready to roll with 6 months
+            Our campervans come with a warranty, buyback offer and 6 months
             rego.
           </div>
         </div>
