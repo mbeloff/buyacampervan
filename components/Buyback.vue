@@ -36,7 +36,7 @@
     </tr>
     <div class="mt-5">
       <a class="text-accent" href="/wicked-sales-policies-111122.pdf"
-        >terms and conditions</a
+        >click here for warranty and buyback terms and conditions</a
       >
     </div>
   </div>
