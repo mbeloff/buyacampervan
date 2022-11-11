@@ -35,7 +35,7 @@
       <td class="px-2">Up to 30%</td>
     </tr>
     <div class="mt-5">
-      <a class="text-accent" href="/public/wicked-sales-policies-111122.pdf"
+      <a class="text-accent" href="/wicked-sales-policies-111122.pdf"
         >terms and conditions</a
       >
     </div>
