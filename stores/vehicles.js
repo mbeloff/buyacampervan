@@ -3,7 +3,18 @@ const imgurl = "https://ik.imagekit.io/y3ayiqneqlr";
 export const useStore = defineStore("store", {
   state: () => {
     return {
-      cities: ['Adelaide','Airlie Beach', 'Brisbane','Byron Bay', 'Cairns','Darwin','Hobart','Melbourne','perth','Sydney'],
+      cities: [
+        "Adelaide",
+        "Airlie Beach",
+        "Brisbane",
+        "Byron Bay",
+        "Cairns",
+        "Darwin",
+        "Hobart",
+        "Melbourne",
+        "perth",
+        "Sydney",
+      ],
       vehicles: [
         {
           name: "Mystery Machine",
@@ -24,7 +35,10 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
-            { text: "6 Month Registration (SA or QLD)", icon: "fa-calendar-check" },
+            {
+              text: "6 Month Registration (SA or QLD)",
+              icon: "fa-calendar-check",
+            },
             { text: "Buyback Guarantee", icon: "fa-money-bill-transfer" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
@@ -76,9 +90,10 @@ export const useStore = defineStore("store", {
         {
           name: "Beach Comber",
           slug: "beach-comber",
+          buyback: true,
           description:
             "The perfect festival/beach camping van, this build is both comfortable and private. Great on fuel with everything you need for your next adventure! ",
-          price: "$23,000",
+          price: "$19,000",
           img: imgurl + "/beach-comb/01b.jpeg",
           gallery: [
             imgurl + "/beach-comb/01b.jpeg",
@@ -95,7 +110,10 @@ export const useStore = defineStore("store", {
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
-            { text: "6 Months Registration (SA or QLD)", icon: "fa-calendar-check" },
+            {
+              text: "6 Months Registration (SA or QLD)",
+              icon: "fa-calendar-check",
+            },
             { text: "Brand new fitout", icon: "fa-sparkles" },
             { text: "Manual transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },

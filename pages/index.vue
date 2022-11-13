@@ -45,10 +45,10 @@
         </p>
         <div class="grid gap-2">
           <p>
-            We're a team with years of experience in campervan
-            conversions. Our campervan fitouts are hand built, and are all ready for your dream road trip. Our campers are converted
-            from pre-loved Suzuki APVs - spacious and reliable vans with
-            old-school charm.
+            Our team has decades of experience in campervan conversions. Our
+            campervan fitouts are hand built, and are all ready for your dream
+            road trip. Our campers are converted from pre-loved Suzuki APVs -
+            spacious and reliable vans with old-school charm.
           </p>
           <p>
             If you have any questions about our campers, please
@@ -66,8 +66,7 @@
           <i class="fal fa-thumbs-up fa-2x"></i>
           <p class="font-bold">Quality Conversions</p>
           <div class="flex-grow text-sm text-center">
-            Hand crafted campervan fitouts, built for your next
-            adventure.
+            Hand crafted campervan fitouts, built for your next adventure.
           </div>
         </div>
         <div
@@ -76,7 +75,8 @@
           <i class="fal fa-earth-oceania fa-2x"></i>
           <p class="font-bold">Built Locally</p>
           <div class="flex-grow text-sm text-center">
-            Our team has years of experience in campervan conversions, with campers available in locations all around Australia
+            Our team has years of experience in campervan conversions, with
+            campers available in locations all around Australia
           </div>
         </div>
         <div
@@ -85,7 +85,8 @@
           <i class="fal fa-umbrella-beach fa-2x"></i>
           <p class="font-bold">Ready to Go</p>
           <div class="flex-grow text-sm text-center">
-            Our campervans come with a warranty, buyback offer and 6 months rego.
+            Our campervans come with a warranty, buyback offer and 6 months
+            rego.
           </div>
         </div>
       </div>

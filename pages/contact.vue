@@ -10,12 +10,11 @@
           >
         </p>
         <p class="mb-5 text-gray-700">
-          Got a question about our campervans, or would you like to enquire
-          about a purchase? Please call, or use the form to send us a message
-          and we'll get back to you.
+          Please call, or use the form to send us a message and we'll get back
+          to you.
         </p>
         <a
-          :href="store.company.phone.replaceAll(' ', '')"
+          :href="'tel:' + store.company.phone.replaceAll(' ', '')"
           class="text-accent-500 text-lg"
         >
           <i class="fa-sharp fa-phone mr-2"></i>{{ store.company.phone }}
@@ -89,7 +88,7 @@
               <option v-for="model in models" :value="model.name">
                 {{ model.name }}
               </option>
-              </FormKit>
+            </FormKit>
             <FormKit
               type="select"
               label="Purchase city"
@@ -158,7 +157,7 @@ const store = useStore();
 const models = computed(() => {
   return [...store.vehicles];
 });
-const cities = computed(()=>store.cities)
+const cities = computed(() => store.cities);
 
 const submitting = ref(false);
 const submitted = ref(false);
