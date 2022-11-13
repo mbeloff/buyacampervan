@@ -10,8 +10,8 @@
           >
         </p>
         <p class="mb-5 text-gray-700">
-          Please call, or use the form to send us a message and we'll get back
-          to you.
+          To enquire about availability or to make a puchase, please give us a
+          call, or use the form below and we'll get back to you.
         </p>
         <a
           :href="'tel:' + store.company.phone.replaceAll(' ', '')"
