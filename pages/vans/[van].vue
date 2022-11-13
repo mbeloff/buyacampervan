@@ -51,6 +51,12 @@
               ></NuxtLink
             >
           </p>
+          <p class="text-sm mt-5" v-if="data.location">
+            available in: {{ data.location }}
+          </p>
+          <p class="text-sm mt-5" v-else>
+            available in: <span v-for="city in store.cities">{{ city }}, </span>
+          </p>
         </div>
         <div class="w-[80%] mx-auto h-px bg-accent-500/50 my-10"></div>
 
@@ -60,16 +66,14 @@
           >
             <tr class="py-1 px-2" v-for="item in data.specs">
               <td class="py-1">
-<i
-                class="fa-sharp text-accent-500 mr-2 fa-fw"
-                :class="item.icon"
-              ></i
-              >
+                <i
+                  class="fa-sharp text-accent-500 mr-2 fa-fw"
+                  :class="item.icon"
+                ></i>
               </td>
               <td class="py-1">
-{{ item.text }}
+                {{ item.text }}
               </td>
-              
             </tr>
           </ul>
         </div>

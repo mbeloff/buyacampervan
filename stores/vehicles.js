@@ -94,6 +94,7 @@ export const useStore = defineStore("store", {
           description:
             "The perfect festival/beach camping van, this build is both comfortable and private. Great on fuel with everything you need for your next adventure! ",
           price: "$19,000",
+          location: 'Brisbane',
           img: imgurl + "/beach-comb/01b.jpeg",
           gallery: [
             imgurl + "/beach-comb/01b.jpeg",
