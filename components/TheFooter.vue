@@ -9,6 +9,9 @@
           v-show="route.path != link.path"
           >{{ link.label }}</NuxtLink
         >
+        <a class="text-accent-500" href="/wicked-sales-policies-111122.pdf" target="_blank"
+          >policies
+        </a>
       </div>
       <p class="text-sm">&copy 2022 buyacampervan.com.au</p>
     </div>

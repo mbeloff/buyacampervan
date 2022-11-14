@@ -48,7 +48,16 @@
             Our team has decades of experience in campervan conversions. Our
             campervan fitouts are hand built, and are all ready for your dream
             road trip. Our campers are converted from pre-loved Suzuki APVs -
-            spacious and reliable vans with old-school charm.
+            spacious and reliable vans with old-school charm. All vans are sold
+            with 6 months registrations (registered in South Australia or
+            Queensland) and come with a
+            <a
+              class="text-accent-500"
+              href="/wicked-sales-policies-111122.pdf"
+              target="_blank"
+              >warranty and a buyback
+            </a>
+            offer.
           </p>
           <p>
             If you have any questions about our campers, please
