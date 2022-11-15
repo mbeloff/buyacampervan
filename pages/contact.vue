@@ -85,7 +85,7 @@
               v-model="form.model"
             >
               <option value="not specified">---</option>
-              <option v-for="model in models" :value="model.name">
+              <option v-for="model in models.filter(el=>!el.sold)" :value="model.name">
                 {{ model.name }}
               </option>
             </FormKit>
