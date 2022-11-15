@@ -35,15 +35,20 @@
 
         <p class="text-sm mb-2">{{ data.description }}</p>
         <div class="mb-10 font-bold">
-          <p class="font-cursive text-2xl text-accent-500 mb-1">
+          <p
+            v-if="!data.sold"
+            class="font-cursive text-2xl text-accent-500 mb-1"
+          >
             <span class="font-light text-sm text-">available for</span>
             {{ data.price }}
           </p>
+          <p v-else class="font-cursive text-2xl text-accent-500 mb-1">Sold!</p>
           <p class="text-xs mb-5 text-gray-700">
             3 month / 5,000km warranty & 6 month rego
           </p>
           <p>
             <NuxtLink
+              v-if="!data.sold"
               to="/contact"
               class="rounded-md bg-gradient-to-tr from-accent-500 to-accent-400 px-5 py-2 text-sm text-gray-100 uppercase hover:from-accent-500 hover:to-accent-500 grid place-items-center w-max"
               ><span
@@ -51,12 +56,15 @@
               ></NuxtLink
             >
           </p>
-          <p class="text-sm mt-5" v-if="data.location">
-            available in: {{ data.location }}
-          </p>
-          <p class="text-sm mt-5" v-else>
-            available in: <span v-for="city in store.cities">{{ city }}, </span>
-          </p>
+          <div v-if="!data.sold">
+            <p class="text-sm mt-5" v-if="data.location">
+              available in: {{ data.location }}
+            </p>
+            <p class="text-sm mt-5" v-else>
+              available in:
+              <span v-for="city in store.cities">{{ city }}, </span>
+            </p>
+          </div>
         </div>
         <div class="w-[80%] mx-auto h-px bg-accent-500/50 my-10"></div>
 

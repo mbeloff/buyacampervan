@@ -27,7 +27,7 @@
               to="/vans"
               class="py-2 px-4 hover:text-accent-500 hover:scale-105 transition-scale duration-200"
             >
-              for sale
+              our vans
             </NuxtLink>
           </div>
 

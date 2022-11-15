@@ -90,11 +90,12 @@ export const useStore = defineStore("store", {
         {
           name: "Beach Comber",
           slug: "beach-comber",
+          sold: true,
           buyback: true,
           description:
             "The perfect festival/beach camping van, this build is both comfortable and private. Great on fuel with everything you need for your next adventure! ",
           price: "$19,000",
-          location: 'Brisbane',
+          location: "Brisbane",
           img: imgurl + "/beach-comb/01b.jpeg",
           gallery: [
             imgurl + "/beach-comb/01b.jpeg",

@@ -14,9 +14,10 @@
         </p>
         <div class="relative">
           <p
-            class="absolute font-cursive text-3xl -left-2 top-4 -rotate-3 text-accent-100 after:w-[110%] after:h-full after:bg-accent-500 after:content-[' '] after:absolute after:-left-1 after:top-1 after:-z-10 after:shadow-md"
+            class="absolute font-cursive text-3xl -left-2 top-4 -rotate-3 text-accent-100 after:w-[110%] after:h-full after:bg-accent-500 after:content-[' '] after:absolute after:-left-1 after:top-1 after:-z-10 after:shadow-md after:w-[120%]"
           >
-            {{ van.price }}
+            <span v-if="!van.sold">{{ van.price }}</span>
+            <span v-else>sold</span>
           </p>
           <img
             :src="van.img + '?tr=w-1200'"
