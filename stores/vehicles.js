@@ -26,12 +26,13 @@ export const useStore = defineStore("store", {
           img: imgurl + "/mystery-machine/01.jpeg",
           gallery: [
             imgurl + "/mystery-machine/01.jpeg",
+            imgurl + "/mystery-machine/update/1.jpg",
+            imgurl + "/mystery-machine/update/3.jpg",
             imgurl + "/mystery-machine/2.jpg",
-            imgurl + "/mystery-machine/3.jpg",
-            imgurl + "/mystery-machine/4.jpg",
-            imgurl + "/mystery-machine/1.jpg",
             imgurl + "/mystery-machine/5.jpg",
             imgurl + "/mystery-machine/6.jpg",
+            imgurl + "/mystery-machine/update/2.jpg",
+            imgurl + "/mystery-machine/update/5.jpg",
           ],
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
