@@ -8,7 +8,7 @@
       >
     </p>
     <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-      <div class="" v-for="van in store.vehicles">
+      <div class="h-full" v-for="van in store.vehicles">
         <p class="mb-5 text-2xl text-gray-600 font-bold text-center">
           {{ van.name }}
         </p>
@@ -29,6 +29,7 @@
         <p class="mb-5 text-sm text-left">
           {{ van.description }}
         </p>
+
         <NuxtLink class="text-accent-500 group" :to="'/vans/' + van.slug">
           <span
             class="bg-accent text-white py-1 px-4 rounded-md flex items-center w-max hover:from-accent-500 hover:to-accent-500 bg-gradient-to-tr from-accent-500 to-accent-400"
@@ -39,6 +40,12 @@
             ></i>
           </span>
         </NuxtLink>
+        <div class="flex flex-wrap gap-x-1 my-2 text-xs" v-if="!van.location">
+          Avaialble in:
+          <span class="w-max" v-for="city in store.cities">
+            {{ city }} <span class="text-accent-500">/</span></span
+          >
+        </div>
       </div>
     </div>
   </div>
