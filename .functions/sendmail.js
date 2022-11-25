@@ -73,6 +73,7 @@ exports.handler = function (event, context, callback) {
     from: `"Buy a Camper Online" <${process.env.MAIL_USER}>`,
     replyTo: body.email,
     to: process.env.MAIL_USER,
+    cc: process.env.MAIL_DEV,
     subject: "buyacamper.com.au online",
     text: event.body,
     html: safeHtml.$,
