@@ -8,7 +8,8 @@
     </p>
     <p class="mb-5">
       Purchase with peace of mind, knowing that if you wish to sell the van at
-      the end of your journey, we'll buy it back in Brisbane, Cairns, Melbourne, Adelaide, Perth or Sydney.
+      the end of your journey, we'll buy it back in Brisbane, Cairns, Melbourne,
+      Adelaide, Perth or Sydney.
     </p>
     <tr>
       <td class="px-2">
@@ -35,7 +36,10 @@
       <td class="px-2">Up to 30%</td>
     </tr>
     <div class="mt-5">
-      <a class="text-accent" href="/wicked-sales-policies-111122.pdf"
+      <a
+        class="text-accent"
+        href="/wicked-sales-policies-111122.pdf"
+        target="_blank"
         >click here for warranty and buyback terms and conditions</a
       >
     </div>
