@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   formkit: {
     configFile: './formkit.config.ts',
   },
-  // ssr: false,
+  ssr: false,
   googleFonts: {
     families: {
       Pacifico: true,

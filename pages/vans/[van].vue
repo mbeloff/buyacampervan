@@ -101,7 +101,7 @@ watchEffect(() => {
   data.value = store.vehicles.find((el) => el.slug == route.params.van);
 });
 const preview = ref(null);
-const fullsize = "?tr=w-1200";
+const fullsize = "?tr=w-1000";
 const thumbsize = "?tr=w-100";
 
 const leftover = computed(() => {

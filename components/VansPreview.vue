@@ -20,7 +20,7 @@
             <span v-else>sold</span>
           </p>
           <img
-            :src="van.img + '?tr=w-1200'"
+            :src="van.img + '?tr=w-800'"
             alt=""
             class="mb-5 rounded-md shadow-xl shadow-accent-500/20 md:h-[300px] w-full object-cover"
           />

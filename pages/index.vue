@@ -3,22 +3,22 @@
     <div class="grid grid-cols-4 max-w-screen-lg gap-0 mx-auto relative">
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[0]"
+        :src="store.vehicles[0].gallery[0] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[1].gallery[1]"
+        :src="store.vehicles[1].gallery[1] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[1].gallery[6]"
+        :src="store.vehicles[1].gallery[6] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[2]"
+        :src="store.vehicles[0].gallery[2] + '?tr=w-550'"
         alt=""
       />
       <div
