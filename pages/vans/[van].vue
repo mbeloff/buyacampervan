@@ -44,7 +44,7 @@
           </p>
           <p v-else class="font-cursive text-2xl text-accent-500 mb-1">Sold!</p>
           <p class="text-xs mb-5 text-gray-700">
-            3 month / 5,000km warranty & 6 month rego
+            6 month / 10,000km warranty & 6 month rego
           </p>
           <p>
             <NuxtLink
@@ -101,8 +101,8 @@ watchEffect(() => {
   data.value = store.vehicles.find((el) => el.slug == route.params.van);
 });
 const preview = ref(null);
-const fullsize = "?tr=w-1000";
-const thumbsize = "?tr=w-100";
+const fullsize = "?tr=w-1000,fo-auto";
+const thumbsize = "?tr=w-100,h-100,fo-auto";
 
 const leftover = computed(() => {
   let len = store.vehicles.find((el) => el.slug == route.params.van).gallery

@@ -17,8 +17,8 @@ export const useStore = defineStore("store", {
       ],
       vehicles: [
         {
-          name: "Mystery Machine",
-          slug: "mystery-machine",
+          name: "Mystery Machine Manual",
+          slug: "mystery-machine-manual",
           buyback: true,
           price: "$16,000",
           description:
@@ -37,11 +37,48 @@ export const useStore = defineStore("store", {
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
             {
-              text: "6 Month Registration (SA or QLD)",
+              text: "6 Month Registration",
               icon: "fa-calendar-check",
             },
             { text: "Buyback Guarantee", icon: "fa-money-bill-transfer" },
             { text: "Manual transmission", icon: "fa-cogs" },
+            { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
+            { text: "Sleeps 2", icon: "fa-bed" },
+            { text: "Dual Side Doors", icon: "fa-arrow-right-to-bracket" },
+            { text: "Rear kitchenette with sink and tap", icon: "fa-sink" },
+            { text: "12V charging port", icon: "fa-battery-bolt" },
+            {
+              text: "Indoor converts to dining area",
+              icon: "fa-champagne-glasses",
+            },
+            { text: "Plenty of storage space", icon: "fa-box" },
+          ],
+        },
+        {
+          name: "Mystery Machine Auto",
+          slug: "mystery-machine-auto",
+          buyback: true,
+          price: "$13,000",
+          description:
+            "Fantastic budget camper with automatic transmission. Sleep under the stars or take in the sights from the rooftop stage. Also available without rooftop stage.",
+          img: imgurl + "/mystery-machine-regius/7.jpg",
+          gallery: [
+            imgurl + "/mystery-machine-regius/1.jpg",
+            imgurl + "/mystery-machine-regius/3.jpg",
+            imgurl + "/mystery-machine-regius/2.jpg",
+            imgurl + "/mystery-machine-regius/4.jpg",
+            imgurl + "/mystery-machine-regius/5.jpg",
+            imgurl + "/mystery-machine-regius/6.jpg",
+            imgurl + "/mystery-machine-regius/7.jpg",
+          ],
+          specs: [
+            { text: "Toyota Regius petrol", icon: "fa-van-shuttle" },
+            {
+              text: "6 Month Registration",
+              icon: "fa-calendar-check",
+            },
+            { text: "Buyback Guarantee", icon: "fa-money-bill-transfer" },
+            { text: "Automatic transmission", icon: "fa-cogs" },
             { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
             { text: "Sleeps 2", icon: "fa-bed" },
             { text: "Dual Side Doors", icon: "fa-arrow-right-to-bracket" },
@@ -92,7 +129,7 @@ export const useStore = defineStore("store", {
           name: "Beach Comber",
           slug: "beach-comber",
           sold: true,
-          buyback: true,
+          // buyback: true,
           description:
             "The perfect festival/beach camping van, this build is both comfortable and private. Great on fuel with everything you need for your next adventure! ",
           price: "$19,000",
@@ -114,7 +151,7 @@ export const useStore = defineStore("store", {
           specs: [
             { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
             {
-              text: "6 Months Registration (SA or QLD)",
+              text: "6 Months Registration",
               icon: "fa-calendar-check",
             },
             { text: "Brand new fitout", icon: "fa-sparkles" },

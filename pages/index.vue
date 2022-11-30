@@ -3,22 +3,22 @@
     <div class="grid grid-cols-4 max-w-screen-lg gap-0 mx-auto relative">
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[0] + '?tr=w-550'"
+        :src="store.vehicles[2].gallery[0] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[1].gallery[1] + '?tr=w-550'"
+        :src="store.vehicles[2].gallery[1] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[1].gallery[6] + '?tr=w-550'"
+        :src="store.vehicles[2].gallery[6] + '?tr=w-550'"
         alt=""
       />
       <img
         class="h-full w-full object-cover"
-        :src="store.vehicles[0].gallery[2] + '?tr=w-550'"
+        :src="store.vehicles[1].gallery[5] + '?tr=w-450,h-700'"
         alt=""
       />
       <div
@@ -47,8 +47,8 @@
           <p>
             Our team has decades of experience in campervan conversions. Our
             campervan fitouts are hand built, and are all ready for your dream
-            road trip. Our campers are converted from pre-loved Suzuki APVs -
-            spacious and reliable vans with old-school charm. All vans are sold
+            road trip. Our campers are converted from pre-loved vans such as the
+            Suzuki APV - spacious vans with old-school charm. All vans are sold
             with 6 months registrations (registered in South Australia or
             Queensland) and come with a
             <a
