@@ -49,8 +49,7 @@
             campervan fitouts are hand built, and are all ready for your dream
             road trip. Our campers are converted from pre-loved vans such as the
             Suzuki APV - spacious vans with old-school charm. All vans are sold
-            with 6 months registrations (registered in South Australia or
-            Queensland) and come with a
+            with 6 months registrations and come with a
             <a
               class="text-accent-500"
               href="/wicked-sales-policies-111122.pdf"
