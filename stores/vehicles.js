@@ -70,6 +70,7 @@ export const useStore = defineStore("store", {
             imgurl + "/mystery-machine-regius/5.jpg",
             imgurl + "/mystery-machine-regius/6.jpg",
             imgurl + "/mystery-machine-regius/7.jpg",
+            imgurl + "/mystery-machine-regius/8.jpg",
           ],
           specs: [
             { text: "Toyota Regius petrol", icon: "fa-van-shuttle" },

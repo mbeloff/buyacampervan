@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Hand crafted campervan fitouts",
+            "Ex-rental campervans for sale",
         },
       ],
       script: [

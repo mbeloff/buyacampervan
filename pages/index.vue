@@ -74,7 +74,7 @@
           <i class="fal fa-thumbs-up fa-2x"></i>
           <p class="font-bold">Quality Conversions</p>
           <div class="flex-grow text-sm text-center">
-            Hand crafted campervan fitouts, built for your next adventure.
+            Hand crafted campervan fitouts, ready for your next adventure.
           </div>
         </div>
         <div
