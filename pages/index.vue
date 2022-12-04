@@ -29,7 +29,7 @@
       class="grid w-full max-w-screen-lg gap-20 md:gap-40 px-2 py-10 mx-auto"
     >
       <div>
-        <p class="mb-10 text-center text-3xl md:text-6xl">
+        <p class="text-center text-3xl md:text-6xl">
           <span
             class="font-bold text-center text-transparent bg-gradient-to-tr from-accent-500 to-accent-300 bg-clip-text"
             >buy</span
@@ -43,6 +43,7 @@
             >campervan</span
           >
         </p>
+        <p class="font-bold text-lg text-center mb-10 text-accent-500">- Buyback Guarantee -</p>
         <div class="grid gap-2">
           <p>
             Our team has decades of experience in campervan conversions. Our
