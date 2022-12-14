@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-const imgurl = "https://ik.imagekit.io/y3ayiqneqlr";
+const imgurl = "https://ik.imagekit.io/y3ayiqneqlr/buyacampervan";
 export const useStore = defineStore("store", {
   state: () => {
     return {
@@ -26,6 +26,45 @@ export const useStore = defineStore("store", {
           img: imgurl + "/mystery-machine/01.jpeg",
           gallery: [
             imgurl + "/mystery-machine/01.jpeg",
+            imgurl + "/mystery-machine/update/1.jpg",
+            imgurl + "/mystery-machine/update/3.jpg",
+            imgurl + "/mystery-machine/2.jpg",
+            imgurl + "/mystery-machine/5.jpg",
+            imgurl + "/mystery-machine/6.jpg",
+            imgurl + "/mystery-machine/update/2.jpg",
+            imgurl + "/mystery-machine/update/5.jpg",
+          ],
+          specs: [
+            { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
+            {
+              text: "6 Month Registration",
+              icon: "fa-calendar-check",
+            },
+            { text: "Buyback Guarantee", icon: "fa-money-bill-transfer" },
+            { text: "Manual transmission", icon: "fa-cogs" },
+            { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
+            { text: "Sleeps 2", icon: "fa-bed" },
+            { text: "Dual Side Doors", icon: "fa-arrow-right-to-bracket" },
+            { text: "Rear kitchenette with sink and tap", icon: "fa-sink" },
+            { text: "12V charging port", icon: "fa-battery-bolt" },
+            {
+              text: "Indoor converts to dining area",
+              icon: "fa-champagne-glasses",
+            },
+            { text: "Plenty of storage space", icon: "fa-box" },
+          ],
+        },
+        {
+          name: "Aventus Manual",
+          slug: "aventus-manual",
+          buyback: true,
+          price: "$16,000",
+          description:
+            "Great budget campers, spacious, easy to drive and with all the basics. Plain painted exterior (Colours may vary)",
+          img: imgurl + "/plain/1.jpeg",
+          gallery: [
+            imgurl + "/plain/1.jpeg",
+            imgurl + "/plain/2.jpeg",
             imgurl + "/mystery-machine/update/1.jpg",
             imgurl + "/mystery-machine/update/3.jpg",
             imgurl + "/mystery-machine/2.jpg",
