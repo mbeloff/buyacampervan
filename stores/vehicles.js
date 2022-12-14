@@ -174,7 +174,7 @@ export const useStore = defineStore("store", {
         name: "buyacampervan",
         tag: "tag line",
         email: "info@buyacampervan.com.au",
-        phone: "0456 367 387",
+        phone: "+61 417 740 307",
         region: "Australia",
       },
     };
