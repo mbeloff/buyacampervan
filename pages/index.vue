@@ -48,18 +48,33 @@
         </p>
         <div class="grid gap-2">
           <p>
-            Our team has decades of experience in campervan conversions. Our
-            campervan fitouts are hand built, and are all ready for your dream
-            road trip. Our campers are converted from pre-loved vans such as the
-            Suzuki APV - spacious vans with old-school charm. All vans are sold
-            with 6 months registrations and come with a
+            Buy the perfect campervan for your next Australian adventure! We
+            offer ex-rental campervans, ideal for backpackers or tourists who
+            want to explore the country at their own pace.
+          </p>
+          <p>
+            Our campervans are perfect for those who love the freedom of the
+            open road, as they come with everything you need to hit the highway
+            and start exploring. They are equipped with a dining/lounge area,
+            double bed and kitchenette complete with gas-cooker, cutlery and
+            cookware..
+          </p>
+          <p>
+            All of our campervans come with 6 months registration (registered in
+            South Australia), so you can hit the road with peace of mind. We
+            also offer a
             <a
               class="text-accent-500"
               href="/wicked-sales-policies-111122.pdf"
               target="_blank"
-              >warranty and a buyback
-            </a>
-            offer.
+              >warranty and a buyback offer </a
+            >, which means that you can sell your campervan back to us at a fair
+            price at the end of your journey.
+          </p>
+          <p>
+            So whether you're planning a short road trip or a longer adventure,
+            our campervans are the perfect choice for exploring Australia.
+            Browse our range today and start planning your next adventure!
           </p>
           <p>
             If you have any questions about our campers, please
@@ -97,7 +112,7 @@
           <p class="font-bold">Ready to Go</p>
           <div class="flex-grow text-sm text-center">
             Our campervans come with a warranty, buyback offer and 6 months
-            rego.
+            registration.
           </div>
         </div>
       </div>
