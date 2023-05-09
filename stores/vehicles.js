@@ -21,6 +21,7 @@ export const useStore = defineStore("store", {
           slug: "mystery-machine-manual",
           buyback: true,
           price: "$16,000",
+          discount: "$9,000",
           description:
             "The perfect van for weekends away as well as longer adventures without breaking the bank! This camper is user friendly, comfortable and most importantly its FUN!",
           img: imgurl + "/mystery-machine/01.jpeg",
@@ -59,6 +60,7 @@ export const useStore = defineStore("store", {
           slug: "aventus-manual",
           buyback: true,
           price: "$16,000",
+          discount: "$9,000",
           description:
             "Great budget campers, spacious, easy to drive and with all the basics. Plain painted exterior (Colours may vary)",
           img: imgurl + "/plain/1.jpeg",
@@ -98,6 +100,7 @@ export const useStore = defineStore("store", {
           slug: "mystery-machine-auto",
           buyback: true,
           price: "$13,000",
+          discount: "$9,000",
           description:
             "Fantastic budget camper with automatic transmission. Sleep under the stars or take in the sights from the rooftop stage. Also available without rooftop stage.",
           img: imgurl + "/mystery-machine-regius/7.jpg",

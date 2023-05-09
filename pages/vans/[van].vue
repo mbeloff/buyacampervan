@@ -1,66 +1,86 @@
 <template>
   <div class="grid w-full max-w-screen-lg px-2 py-20 mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
       <div class="">
         <div
-          class="w-full aspect-square rounded-xl overflow-hidden bg-gray-400"
+          class="w-full overflow-hidden bg-gray-400 aspect-square rounded-xl"
         >
           <img
             :src="(preview || data.img) + fullsize"
             alt=""
-            class="w-full h-full object-cover"
+            class="object-cover w-full h-full"
           />
         </div>
-        <div class="grid grid-cols-6 mt-2 gap-1 rounded-lg overflow-hidden">
+        <div class="grid grid-cols-6 gap-1 mt-2 overflow-hidden rounded-lg">
           <img
             v-for="img in data.gallery"
             @click="preview = img"
             :src="img + thumbsize"
             alt=""
-            class="w-full h-16 object-cover border cursor-pointer"
+            class="object-cover w-full h-16 border cursor-pointer"
           />
           <div
             v-for="placeholder in leftover"
-            class="w-full h-16 object-cover border bg-gray-200"
+            class="object-cover w-full h-16 bg-gray-200 border"
           ></div>
         </div>
       </div>
       <div class="">
-        <p class="font-bold text-3xl mb-5">
+        <p class="mb-5 text-3xl font-bold">
           <span
             class="text-4xl font-bold text-center text-transparent bg-gradient-to-tr from-blue-500 to-primary-500 bg-clip-text"
             >{{ data.name }}</span
           >
         </p>
 
-        <p class="text-sm mb-2">{{ data.description }}</p>
-        <div class="mb-10 font-bold">
-          <p
+        <p class="mb-2 text-sm">{{ data.description }}</p>
+
+        <div
+          class="mb-10 font-bold text-accent-500"
+          :class="{ 'text-gray-400': data.discount }"
+        >
+          <div
             v-if="!data.sold"
-            class="font-cursive text-2xl text-accent-500 mb-1"
+            class="relative mt-2 -mb-1 text-xl font-cursive w-max"
           >
-            <span class="font-light text-sm text-">available for</span>
-            {{ data.price }}
+            <span class="text-sm font-light">available for </span>
+            <span class="ml-1"> {{ data.price }}</span>
+            <div
+              v-if="data.discount"
+              class="w-[75px] h-[1px] bg-gray-500 absolute -right-1 top-4 rotate-[-4deg]"
+            ></div>
+          </div>
+          <div
+            v-if="!data.sold && data.discount"
+            class="relative mb-4 text-3xl font-cursive text-accent-500 w-max"
+          >
+            <span class="text-sm font-light">now </span>
+            <span class="ml-1"> {{ data.discount }}</span>
+          </div>
+          <p v-else class="mb-1 text-2xl font-cursive text-accent-500">Sold!</p>
+          <p class="mb-5 text-xs text-gray-700">
+            6 month / 10,000km warranty & 6 month rego <br />
+            registered in South Australia
           </p>
-          <p v-else class="font-cursive text-2xl text-accent-500 mb-1">Sold!</p>
-          <p class="text-xs mb-5 text-gray-700">
-            6 month / 10,000km warranty & 6 month rego
+          <p class="mb-2 text-teal-500">
+            Buy now with 50% deposit. Remaining balance due when you collect
+            your vehicle.
           </p>
           <p>
             <NuxtLink
               v-if="!data.sold"
               to="/contact"
-              class="rounded-md bg-gradient-to-tr from-accent-500 to-accent-400 px-5 py-2 text-sm text-gray-100 uppercase hover:from-accent-500 hover:to-accent-500 grid place-items-center w-max"
+              class="grid px-5 py-2 text-sm text-gray-100 uppercase rounded-md bg-gradient-to-tr from-accent-500 to-accent-400 hover:from-accent-500 hover:to-accent-500 place-items-center w-max"
               ><span
                 ><i class="fa-sharp fa-comment"></i> enquire</span
               ></NuxtLink
             >
           </p>
           <div v-if="!data.sold">
-            <p class="text-sm mt-5" v-if="data.location">
+            <p class="mt-5 text-sm" v-if="data.location">
               available in: {{ data.location }}
             </p>
-            <p class="text-sm mt-5" v-else>
+            <p class="mt-5 text-sm" v-else>
               available in:
               <span v-for="city in store.cities">{{ city }}, </span>
             </p>
@@ -70,12 +90,12 @@
 
         <div>
           <ul
-            class="list-none text-xs text-gray-700 rounded-lg overflow-hidden columns-2"
+            class="overflow-hidden text-xs text-gray-700 list-none rounded-lg columns-2"
           >
-            <tr class="py-1 px-2" v-for="item in data.specs">
+            <tr class="px-2 py-1" v-for="item in data.specs">
               <td class="py-1">
                 <i
-                  class="fa-sharp text-accent-500 mr-2 fa-fw"
+                  class="mr-2 fa-sharp text-accent-500 fa-fw"
                   :class="item.icon"
                 ></i>
               </td>

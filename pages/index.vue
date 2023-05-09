@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="grid grid-cols-4 max-w-screen-lg gap-0 mx-auto relative">
+    <div class="relative grid max-w-screen-lg grid-cols-4 gap-0 mx-auto">
       <img
-        class="h-full w-full object-cover"
+        class="object-cover w-full h-full"
         :src="'https://ik.imagekit.io/y3ayiqneqlr/buyacampervan/beach-comb/01b.jpeg?tr=w-550'"
         alt=""
       />
       <img
-        class="h-full w-full object-cover"
+        class="object-cover w-full h-full"
         :src="'https://ik.imagekit.io/y3ayiqneqlr/buyacampervan/beach-comb/02.jpeg?tr=w-550'"
         alt=""
       />
       <img
-        class="h-full w-full object-cover"
+        class="object-cover w-full h-full"
         :src="'https://ik.imagekit.io/y3ayiqneqlr/buyacampervan/beach-comb/07.jpeg?tr=w-550'"
         alt=""
       />
       <img
-        class="h-full w-full object-cover"
+        class="object-cover w-full h-full"
         :src="'https://ik.imagekit.io/y3ayiqneqlr/buyacampervan/mystery-machine-regius/6.jpg?tr=w-550'"
         alt=""
       />
@@ -26,10 +26,10 @@
       ></div>
     </div>
     <div
-      class="grid w-full max-w-screen-lg gap-20 md:gap-40 px-2 py-10 mx-auto"
+      class="grid w-full max-w-screen-lg gap-20 px-2 py-10 mx-auto md:gap-40"
     >
       <div>
-        <p class="text-center text-3xl md:text-6xl">
+        <p class="text-3xl text-center md:text-6xl">
           <span
             class="font-bold text-center text-transparent bg-gradient-to-tr from-accent-500 to-accent-300 bg-clip-text"
             >buy</span
@@ -43,7 +43,7 @@
             >campervan</span
           >
         </p>
-        <p class="font-bold text-lg text-center mb-10 text-accent-500">
+        <p class="mb-10 text-lg font-bold text-center text-accent-500">
           - Buyback Guarantee -
         </p>
         <div class="grid gap-2">
@@ -57,11 +57,11 @@
             open road, as they come with everything you need to hit the highway
             and start exploring. They are equipped with a dining/lounge area,
             double bed and kitchenette complete with gas-cooker, cutlery and
-            cookware..
+            cookware.
           </p>
           <p>
-            All of our campervans come with 6 months registration (registered in
-            South Australia), so you can hit the road with peace of mind. We
+            All of our campervans are available in cities around Australia and
+            come with 6 months registration (registered in South Australia). We
             also offer a
             <a
               class="text-accent-500"
@@ -84,7 +84,7 @@
         </div>
       </div>
       <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-500 lg:px-10"
+        class="grid grid-cols-1 gap-10 text-gray-500 md:grid-cols-3 lg:px-10"
       >
         <div
           class="group rounded-md hover:text-accent-500 border-2 border-transparent shadow-lg hover:border-accent-500 flex justify-start hover:scale-[102%] flex-col items-center gap-5 p-5 transition-scale duration-500"
