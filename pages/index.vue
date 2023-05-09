@@ -26,6 +26,11 @@
       ></div>
     </div>
     <div
+      class="max-w-screen-lg py-2 mx-auto font-bold text-center text-white bg-red-500"
+    >
+      {{ store.special }}
+    </div>
+    <div
       class="grid w-full max-w-screen-lg gap-20 px-2 py-10 mx-auto md:gap-40"
     >
       <div>

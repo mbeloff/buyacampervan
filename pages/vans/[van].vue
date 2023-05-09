@@ -62,7 +62,7 @@
             6 month / 10,000km warranty & 6 month rego <br />
             registered in South Australia
           </p>
-          <p class="mb-2 text-teal-500">
+          <p class="mb-2 text-primary-500">
             Buy now with 50% deposit. Remaining balance due when you collect
             your vehicle.
           </p>

@@ -3,6 +3,7 @@ const imgurl = "https://ik.imagekit.io/y3ayiqneqlr/buyacampervan";
 export const useStore = defineStore("store", {
   state: () => {
     return {
+      special: "Limited Time Sale On Now!",
       cities: [
         "Adelaide",
         "Airlie Beach",
