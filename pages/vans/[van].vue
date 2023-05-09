@@ -76,7 +76,7 @@
               ></NuxtLink
             >
           </p>
-          <div v-if="!data.sold">
+          <div v-if="!data.sold" class="font-light">
             <p class="mt-5 text-sm" v-if="data.location">
               available in: {{ data.location }}
             </p>
