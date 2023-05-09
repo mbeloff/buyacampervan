@@ -57,12 +57,14 @@
             <span class="text-sm font-light">now </span>
             <span class="ml-1"> {{ data.discount }}</span>
           </div>
-          <p v-else class="mb-1 text-2xl font-cursive text-accent-500">Sold!</p>
+          <p v-else class="mb-1 text-2xl font-cursive text-accent-500">
+            Sold out!
+          </p>
           <p class="mb-5 text-xs text-gray-700">
             6 month / 10,000km warranty & 6 month rego <br />
             registered in South Australia
           </p>
-          <p class="mb-2 text-primary-500">
+          <p class="mb-2 text-primary-500" v-if="!data.sold">
             Buy now with 50% deposit. Remaining balance due when you collect
             your vehicle.
           </p>

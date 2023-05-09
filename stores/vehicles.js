@@ -18,13 +18,13 @@ export const useStore = defineStore("store", {
       ],
       vehicles: [
         {
-          name: "Mystery Machine Manual",
+          name: "Mystery Machines Manual",
           slug: "mystery-machine-manual",
           buyback: true,
           price: "$16,000",
           discount: "$9,000",
           description:
-            "The perfect van for weekends away as well as longer adventures without breaking the bank! This camper is user friendly, comfortable and most importantly its FUN!",
+            "The perfect van for weekends away as well as longer adventures without breaking the bank! These campers are user friendly, comfortable and most importantly its FUN!",
           img: imgurl + "/mystery-machine/01.jpeg",
           gallery: [
             imgurl + "/mystery-machine/01.jpeg",
@@ -63,7 +63,7 @@ export const useStore = defineStore("store", {
           price: "$16,000",
           discount: "$9,000",
           description:
-            "Great budget campers, spacious, easy to drive and with all the basics. Plain painted exterior (Colours may vary)",
+            "Great budget campers, spacious, easy to drive and with all the basics. Plain or two-tone painted exterior (Colours may vary)",
           img: imgurl + "/plain/1.jpeg",
           gallery: [
             imgurl + "/plain/1.jpeg",
@@ -97,13 +97,13 @@ export const useStore = defineStore("store", {
           ],
         },
         {
-          name: "Mystery Machine Auto",
+          name: "Mystery Machines Auto",
           slug: "mystery-machine-auto",
           buyback: true,
           price: "$13,000",
           discount: "$9,000",
           description:
-            "Fantastic budget camper with automatic transmission. Sleep under the stars or take in the sights from the rooftop stage. Also available without rooftop stage.",
+            "Fantastic budget campers with an automatic transmission. Sleep under the stars or take in the sights from the rooftop stage. Also available without rooftop stage.",
           img: imgurl + "/mystery-machine-regius/7.jpg",
           gallery: [
             imgurl + "/mystery-machine-regius/1.jpg",
@@ -135,40 +135,6 @@ export const useStore = defineStore("store", {
             { text: "Plenty of storage space", icon: "fa-box" },
           ],
         },
-        // {
-        //   name: "Mystery Machine",
-        //   slug: "mystery-machine",
-        //   price: "$19,500",
-        //   description:
-        //     "The perfect van for weekends away as well as longer adventures without breaking the bank! This camper is both user friendly, comfortable and most importantly its FUN!",
-        //   img: imgurl + "/mystery-machine/01.jpeg",
-        //   gallery: [
-        //     imgurl + "/mystery-machine/01.jpeg",
-        //     imgurl + "/mystery-machine/02.jpeg",
-        //     imgurl + "/mystery-machine/03.jpeg",
-        //     imgurl + "/mystery-machine/04.jpeg",
-        //     imgurl + "/mystery-machine/05.jpeg",
-        //   ],
-        //   specs: [
-        //     { text: "Suzuki APV 1.6L petrol", icon: "fa-van-shuttle" },
-        //     { text: "6 Months Registration", icon: "fa-calendar-check" },
-        //     { text: "Brand new fitout", icon: "fa-sparkles" },
-        //     { text: "Manual transmission", icon: "fa-cogs" },
-        //     { text: "2 Seatbelts", icon: "fa-person-seat-reclined" },
-        //     { text: "Sleeps 2", icon: "fa-bed" },
-        //     { text: "Dual Side Doors", icon: "fa-arrow-right-to-bracket" },
-        //     { text: "Rear kitchen with sink and tap", icon: "fa-sink" },
-        //     { text: "Fresh and grey water tanks", icon: "fa-tank-water" },
-        //     { text: "Dual battery setup", icon: "fa-car-battery" },
-        //     { text: "Slide-out fridge", icon: "fa-refrigerator" },
-        //     { text: "USB charging ports", icon: "fa-usb-drive" },
-        //     {
-        //       text: "Indoor converts to dining area",
-        //       icon: "fa-champagne-glasses",
-        //     },
-        //     { text: "Under bed storage", icon: "fa-box" },
-        //   ],
-        // },
         {
           name: "Beach Comber",
           slug: "beach-comber",

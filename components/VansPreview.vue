@@ -27,7 +27,7 @@
               <span class="text-2xl">{{ van.discount }}</span>
             </div>
 
-            <span v-else>sold</span>
+            <span v-else>sold out</span>
           </div>
           <img
             :src="van.img + '?tr=w-800'"
