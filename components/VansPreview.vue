@@ -15,11 +15,13 @@
         <div class="relative">
           <div
             class="absolute font-cursive text-3xl -left-2 top-4 -rotate-3 text-accent-100 after:w-[110%] after:h-full after:bg-accent-500 after:content-[' '] after:absolute after:-left-1 after:top-1 after:-z-10 after:shadow-md after:w-[120%]"
+            :class="{}"
           >
             <div v-if="!van.sold">
               <div :class="{ 'text-lg': van.discount }">
                 {{ van.price }}
                 <div
+                  v-if="van.discount"
                   class="absolute w-16 h-[2px] opacity-40 bg-black rotate-[5.5deg] top-3.5 -left-0.5 rounded-full"
                 ></div>
               </div>

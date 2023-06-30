@@ -50,13 +50,13 @@
               class="w-[75px] h-[1px] bg-gray-500 absolute -right-1 top-4 rotate-[-4deg]"
             ></div>
           </div>
-          <div
+          <!-- <div
             v-if="!data.sold && data.discount"
             class="relative mb-4 text-3xl font-cursive text-accent-500 w-max"
           >
             <span class="text-sm font-light">now </span>
             <span class="ml-1"> {{ data.discount }}</span>
-          </div>
+          </div> -->
           <p v-else class="mb-1 text-2xl font-cursive text-accent-500">
             Sold out!
           </p>

@@ -3,7 +3,7 @@ const imgurl = "https://ik.imagekit.io/y3ayiqneqlr/buyacampervan";
 export const useStore = defineStore("store", {
   state: () => {
     return {
-      special: "Price Drop! Limited Time Sale On Now!",
+      // special: "Price Drop! Limited Time Sale On Now!",
       cities: [
         "Adelaide",
         "Airlie Beach",
@@ -22,7 +22,7 @@ export const useStore = defineStore("store", {
           slug: "mystery-machine-manual",
           buyback: true,
           price: "$16,000",
-          discount: "$9,000",
+          // discount: "$9,000",
           description:
             "The perfect van for weekends away as well as longer adventures without breaking the bank! These campers are user friendly, comfortable and most importantly its FUN!",
           img: imgurl + "/mystery-machine/01.jpeg",
@@ -61,7 +61,7 @@ export const useStore = defineStore("store", {
           slug: "aventus-manual",
           buyback: true,
           price: "$16,000",
-          discount: "$9,000",
+          // discount: "$9,000",
           description:
             "Great budget campers, spacious, easy to drive and with all the basics. Plain or two-tone painted exterior (Colours may vary)",
           img: imgurl + "/plain/1.jpeg",
@@ -101,7 +101,7 @@ export const useStore = defineStore("store", {
           slug: "mystery-machine-auto",
           buyback: true,
           price: "$13,000",
-          discount: "$9,000",
+          // discount: "$9,000",
           description:
             "Fantastic budget campers with an automatic transmission. Sleep under the stars or take in the sights from the rooftop stage. Also available without rooftop stage.",
           img: imgurl + "/mystery-machine-regius/7.jpg",
